@@ -1,0 +1,129 @@
+<ion-content>
+  <ion-modal trigger="open-modal" #musicModal class="fullscreen" [initialBreakpoint]="1">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="end">
+            <ion-button (click)="closeModal()" size="mini" fill="solid" color="danger" >
+              关闭
+            </ion-button>
+          </ion-buttons>
+          <ion-title>
+            歌曲列表
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <div style="overflow:auto;height:100%">
+  
+      <ion-grid style="color:white">
+    <ion-row>
+      <ion-col size="0.5">
+  
+      </ion-col>
+  
+      <ion-col>
+        歌曲
+      </ion-col>
+      <ion-col>
+        歌手
+      </ion-col>
+      <ion-col>
+        播放
+      </ion-col>
+      <ion-col size="0.5">
+  
+      </ion-col>
+  
+    </ion-row>
+    <ion-row *ngFor="let music of musicList; let i=index" class="modalRow">
+      <ion-col size="0.5">
+  
+      </ion-col>
+      <ion-col>
+        {{music.Title}}
+      </ion-col>
+      <ion-col>
+        {{music.Author}}
+      </ion-col>
+      <ion-col>
+        <ion-icon name="play-circle-outline" (click)="playMusic(music.Id,music.Title)" size="large"></ion-icon>
+          </ion-col>
+      <ion-col size="0.5">
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+    </ng-template>
+  </ion-modal>
+
+  <ion-grid class="bodyBackground" style="padding-top:0px">
+    <ion-row style="height:14vh">
+      <!-- <ion-col size="0.5"></ion-col> -->
+      <ion-col>
+        <img src="{{acmeLogo}}" id="acmeLogo" style="width:90%;">
+      </ion-col>
+      <ion-col><div class="ion-text-center" style="height:90%">
+        <img src="{{state}}" style="width:30%;">
+      </div></ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        
+      </ion-col>
+      <ion-col size="1.5">
+        <ion-menu-button  style="font-size:xxx-large"></ion-menu-button>
+  
+      </ion-col>
+  
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="assets/img/mode-select/show1.png" name="show1" id="show1" (click)="show1Click($event)">
+      </ion-col>
+      <ion-col>
+        <img src="assets/img/mode-select/show2.png" name="show2" id="show2" (click)="show2Click($event)">
+      </ion-col>
+      <ion-col>
+        <img src="assets/img/mode-select/show3.png" name="show3" id="show3" (click)="show3Click($event)">
+      </ion-col>
+      <ion-col>
+        <img src="assets/img/mode-select/show4.png" name="show4" id="show4" (click)="show4Click($event)">
+      </ion-col>
+    </ion-row>
+    <ion-row class="listRow fullRow divModeHeight">
+        <ion-col  class="widerConversationBackground">
+
+          <ion-row class="ion-justify-content-center conversationList">
+
+
+            <ion-col class="ion-text-center ion-align-self-end autoHeightCol" >
+            </ion-col>
+            <!-- <ion-col class="ion-text-center ion-align-self-end autoHeightCol" >
+            </ion-col>
+            <ion-col class="ion-text-center ion-align-self-end autoHeightCol" >
+            </ion-col> -->
+          <ion-col class="ion-text-center ion-align-self-end autoHeightCol" size="1">
+            <ion-icon src="assets/img/volume/sub.svg" (click)="volumeSub()" class="largeIcon"></ion-icon>
+
+          </ion-col>
+          <ion-col class="ion-text-center ion-align-self-end autoHeightCol" size="1">
+            <ion-icon src="assets/img/volume/{{musicVolume}}.svg" class="largeIcon"></ion-icon>
+
+          </ion-col>
+          <ion-col class="ion-text-center ion-align-self-end autoHeightCol" size="1">
+            <ion-icon src="assets/img/volume/add.svg" (click)="volumeAdd()" class="largeIcon"></ion-icon>
+            </ion-col>
+
+          <ion-col class="ion-text-center ion-align-self-end autoHeightCol" size="1"><ion-icon src="assets/img/mode-select/list.svg" (click)="modalOpen()" class="largeIcon"></ion-icon></ion-col>
+          <ion-col class="ion-text-center ion-align-self-end autoHeightCol" >
+          </ion-col>
+          </ion-row>
+  
+  
+        </ion-col>
+    </ion-row>
+</ion-grid>
+
+</ion-content>

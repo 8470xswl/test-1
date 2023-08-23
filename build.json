@@ -1,0 +1,7 @@
+{
+    "android":{
+        "release":{
+            "packageType":"apk"
+        }
+    }
+}

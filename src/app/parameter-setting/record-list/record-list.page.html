@@ -1,0 +1,90 @@
+<ion-content>
+    <ion-row>
+        <ion-col>
+            <div class="ion-text-center">
+                <h2>
+                    {{translateText.equipmentMonitoring}} {{recordList.length}} {{translateText.platform}}
+                    <ion-icon name="refresh-outline" (click)="refreshData()"></ion-icon>
+                </h2>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <div class="ion-padding">
+        <ion-accordion-group *ngFor="let recordType of recordList">
+            <ion-accordion value="{{recordType.productName}}">
+                <ion-item slot="header" class="itemColor">
+                    <ion-label>{{recordType.productName}}</ion-label>
+                </ion-item>
+                <ion-grid style="border: 1px solid grey" slot="content">
+                    <ion-row class="rowTableHeader">
+                        <ion-col size="0.8"> {{translateText.serialNumber}} </ion-col>
+                        <ion-col size="0.8"> {{translateText.primaryDomain}} </ion-col>
+                        <ion-col size="1.2"> {{translateText.serialNumber}} </ion-col>
+                        <ion-col size="1.6"> {{translateText.outputPort}} </ion-col>
+                        <ion-col size="1.6"> {{translateText.channelMode}} </ion-col>
+                        <ion-col size="1.6"> {{translateText.DMXChannel}} </ion-col>
+                        <ion-col size="1.6"> {{translateText.DMXAddress}} </ion-col>
+                        <ion-col size="1.6"> {{translateText.recordTime}} </ion-col>
+                        <ion-col size="1.2"> {{translateText.operationInformation}} </ion-col>
+                    </ion-row>
+                    <ion-row *ngFor="let record of recordType.list">
+                        <ion-col size="0.8"> {{record.seqno}} </ion-col>
+                        <ion-col size="0.8"> {{record.domain_1}} </ion-col>
+                        <ion-col size="1.2"> {{record.port}} </ion-col>
+                        <ion-col size="1.6"> {{record.type}} </ion-col>
+                        <ion-col size="1.6"> {{record.channel}} </ion-col>
+                        <ion-col size="1.6"> {{record.addr}} </ion-col>
+                        <ion-col size="1.6"> {{record.update_time | date:"MM-dd"}} </ion-col>
+                        <ion-col size="1.6" [ngStyle]="record.hasherror==0 ? '': {'color':'red'}">
+                            {{record.error_code}}
+                        </ion-col>
+                        <ion-col size="1.2">
+                            <ion-icon
+                                name="chatbubble-ellipses-outline"
+                                size="small"
+                                style="padding-right: 10px"
+                                (click)="getAlert(record)"
+                            ></ion-icon>
+
+                            <ion-icon name="create-outline" size="small" (click)="editRecord(record)"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-accordion>
+        </ion-accordion-group>
+    </div>
+    <ion-button id="recordDetail-modal" hidden></ion-button>
+    <ion-modal trigger="recordDetail-modal" id="record-modal" #recordModal>
+        <ng-template>
+            <ion-content class="ion-text-center">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col> {{translateText.channelMode}} </ion-col>
+                        <ion-col> {{translateText.DMXAddress}} </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-input [(ngModel)]="recordDetailChannel"></ion-input>
+                        </ion-col>
+                        <ion-col>
+                            <ion-input [(ngModel)]="recordDetailDmxAddr"></ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-button color="medium" (click)="sendRecordEdit()">
+                                {{translateText.confirmBtn}}
+                            </ion-button>
+                        </ion-col>
+                        <ion-col>
+                            <ion-button color="medium" (click)="cancelModal()">
+                                {{translateText.cancelBtn}}
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-content>
+        </ng-template>
+    </ion-modal>
+</ion-content>

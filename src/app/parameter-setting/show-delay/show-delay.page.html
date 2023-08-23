@@ -1,0 +1,47 @@
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label>{{translateText.show1DelyTime}}</ion-label>
+            <ion-input
+                placeholder={{translateText.show1DelyTime}}
+                [(ngModel)]="delayShowTime"
+                type="number"
+                min="0"
+                (ionInput)="delayCheck($event)"
+            ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.show2DelyTime}}</ion-label>
+            <ion-input
+                placeholder={{translateText.show2DelyTime}}
+                [(ngModel)]="delayShowTime2"
+                type="number"
+                min="0"
+                (ionInput)="delayCheck($event)"
+            ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.show3DelyTime}}</ion-label>
+            <ion-input
+                placeholder={{translateText.show3DelyTime}}
+                [(ngModel)]="delayShowTime3"
+                type="number"
+                min="0"
+                (ionInput)="delayCheck($event)"
+            ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.show4DelyTime}}</ion-label>
+            <ion-input
+                placeholder={{translateText.show4DelyTime}}
+                [(ngModel)]="delayShowTime4"
+                type="number"
+                min="0"
+                (ionInput)="delayCheck($event)"
+            ></ion-input>
+        </ion-item>
+    </ion-list>
+    <div class="ion-text-center">
+        <ion-button (click)="setParameter()" size="medium">{{translateText.confirmBtn}}</ion-button>
+    </div>
+</ion-content>

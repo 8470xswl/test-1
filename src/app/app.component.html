@@ -1,0 +1,32 @@
+<ion-app>
+    <ion-menu contentId="main-content" type="overlay" side="end">
+        <ion-content>
+            <ion-list id="inbox-list">
+                <ion-menu-toggle auto-hide="false" *ngFor="let p of defaultMenuSettingService.appPages; let i = index">
+                    <ion-item
+                        routerDirection="root"
+                        [routerLink]="[p.url]"
+                        lines="none"
+                        detail="false"
+                        routerLinkActive="selected"
+                    >
+                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                        <ion-label>{{ p.title }}</ion-label>
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+            <ion-item style="padding: 0" (click)="defaultMenuSettingService.switchLanguage()">
+                <ion-col
+                    slot="start"
+                    style="padding: 0px; display: flex; align-items: center; justify-content: center"
+                    size="1"
+                >
+                    <img style="height: 24px" src="{{ translateText.picUrl }}"/>
+                </ion-col>
+                <ion-col style="padding-left: 0px"> {{'appPages.languageSwitching'|translate}} </ion-col>
+            </ion-item>
+        </ion-content>
+    </ion-menu>
+    
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>视频素材下载</ion-title>
+    <ion-buttons slot="end"  >
+      <ion-button (click)="selectAll()" fill="solid" color="primary">全选</ion-button>
+      <ion-button (click)="downloadMusic()" fill="solid" color="primary">下载</ion-button>
+
+      <ion-button (click)="unSelectAll()" fill="solid" color="danger">全不选</ion-button>
+      <ion-button (click)="closeModal()" fill="solid" color="danger" >关闭</ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1">
+        </ion-col>
+        <ion-col>
+          名字
+        </ion-col>
+        <ion-col>
+          文件类型
+        </ion-col>
+        <ion-col>
+          大小
+        </ion-col>
+        <ion-col>
+          状态
+        </ion-col>
+      </ion-row>
+
+    <ion-row *ngFor="let video of videoList">
+      <ion-col size="1">
+        <ion-checkbox color="primary" class="checkBoxClass" mode="ios" [(ngModel)]="video.ifChecked">
+
+        </ion-checkbox>
+
+      </ion-col>
+      <ion-col>
+        {{video.fileName.substr(0,video.fileName.indexOf('.'))}}
+        
+      </ion-col>
+      <ion-col>
+        {{video.type.substr(video.type.indexOf('/')+1,video.type.length)}}
+
+      </ion-col>
+      <ion-col>
+      {{(video.size/1024).toFixed(3)}}MB
+      </ion-col>
+      <ion-col>
+        <ng-container *ngIf="video.downNum>0">已下载</ng-container>
+        <ng-container *ngIf="video.downNum<=0">未下载</ng-container>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

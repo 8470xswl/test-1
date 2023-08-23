@@ -1,0 +1,248 @@
+<ion-content>
+    <ion-list>
+        <ion-item *ngIf="false">
+            <ion-label>{{translateText.address}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.addressPlaceholder}}"
+                [(ngModel)]="address"></ion-input>
+            <ion-button (click)="scan()" expand="full" fill="clear"
+                ><ion-icon slot="end" ios="scan-outline" md="scan-sharp" size="large"></ion-icon
+            ></ion-button>
+        </ion-item>
+
+        <ion-item *ngIf="false">
+            <ion-label> {{translateText.port}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.addressPlaceholder}}"
+                [(ngModel)]="port"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label> {{translateText.destinationPort}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.portPlaceholder}}"
+                [(ngModel)]="destinationPort"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label> {{translateText.monitorPort}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.portPlaceholder}}"
+                [(ngModel)]="monitorPort"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.meetingGuestsDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.meetingGuestsDefaultVolumePlaceholder}}"
+                [(ngModel)]="conversationDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.danceMusicDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.danceMusicDefaultVolumePlaceholder}}"
+                [(ngModel)]="dancemusicDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.christmasDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.christmasDefaultVolumePlaceholder}}"
+                [(ngModel)]="christmasDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.birthdayDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.birthdayDefaultVolumePlaceholder}}"
+                [(ngModel)]="birthdaysDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.OpeningShowDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.OpeningShowDefaultVolumePlaceholder}}"
+                [(ngModel)]="showDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.servingLiquorDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.servingLiquorDefaultVolumePlaceholder}}"
+                [(ngModel)]="liquorDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.GGDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.GGDefaultVolumePlaceholder}}"
+                [(ngModel)]="danceDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.beautyDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.beautyDefaultVolumePlaceholder}}"
+                [(ngModel)]="beautyDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.proposeDefaultVolume}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.proposeDefaultVolumePlaceholder}}"
+                [(ngModel)]="proposeDefaultVolume"
+                type="number"
+                min="0"
+                max="100"
+                (ionInput)="numberCheck($event)"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>n8ip: </ion-label>
+            <ion-input [(ngModel)]="n8ip" type="number" min="0" max="255"></ion-input>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.externalHdmiSignal}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="showState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.productVideo}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="videoState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.karaokeParty}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="discoState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.bluetoothParty}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="bluetoothState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.servingLiquor}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="liquorState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.draft}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="beautyState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.GGDance}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="GGDanceState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.propose}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="proposeState"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.openingShow}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="showType"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.screenSaver}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="screenSaver"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.CA1105}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="CA1105"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.editCustomRegion}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="customize"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-label> {{translateText.videoOverlay}} </ion-label>
+            <ion-label class="ion-text-right"> {{translateText.switchOff}} </ion-label>
+            <ion-toggle [(ngModel)]="showDump"> </ion-toggle>
+            <ion-label> {{translateText.switchOn}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item_underline" lines="full">
+            <ion-col size="4" style="padding-inline-start: 0px">
+                {{translateText.serviceLightStandbyColor}}
+            </ion-col>
+            <ion-col size="8">
+                <ion-radio-group [(ngModel)]="color">
+                    <ion-item lines="none">
+                        <ion-radio [class.ion-radio2]="true" value="blue"> </ion-radio>
+                    </ion-item>
+                    <ion-item lines="none">
+                        <ion-radio [class.ion-radio1]="true" value="white"> </ion-radio>
+                    </ion-item>
+                    <ion-item lines="none">
+                        <ion-radio [class.ion-radio3]="true" value="green"> </ion-radio>
+                    </ion-item>
+
+                    <ion-item lines="none">
+                        <ion-radio [class.ion-radio4]="true" value="yellow"> </ion-radio>
+                    </ion-item>
+                    <ion-item lines="none">
+                        <ion-radio [class.ion-radio5]="true" value="red"> </ion-radio>
+                    </ion-item>
+                </ion-radio-group>
+            </ion-col>
+        </ion-item>
+        <div class="ion-text-center">
+            <ion-button (click)="setParameter()" size="medium"
+                >{{translateText.confirmBtn}}</ion-button
+            >
+        </div>
+    </ion-list>
+</ion-content>

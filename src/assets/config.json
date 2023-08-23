@@ -1,0 +1,13 @@
+{
+    "environment": "debug",
+    "_environment": "release",
+    "initStorage": false,
+    "screensaverTime": 60,
+    "vConsole": true,
+    "customizedFeatures": {
+        "bluetooth": true
+    },
+    "parameterSettings": {
+        "lightRecording": true
+    }
+}

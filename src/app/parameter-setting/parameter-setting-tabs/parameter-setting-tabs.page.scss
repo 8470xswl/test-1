@@ -1,0 +1,13 @@
+ion-tab-button{
+    font-size: large;
+    --color:white;
+    --color-selected:white;
+    --background:#5f5d5d;
+    --background-selected:white;
+    --background-focused:black;
+    max-width: none;
+
+}
+ion-tab-button.tab-selected{
+    background-color: #a1a1a1;
+}

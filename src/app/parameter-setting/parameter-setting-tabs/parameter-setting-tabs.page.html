@@ -1,0 +1,41 @@
+<ion-tabs>
+    <ion-header>
+        <ion-toolbar mode="md">
+            <ion-buttons slot="start">
+                <ion-menu-button style="visibility: hidden"></ion-menu-button>
+            </ion-buttons>
+
+            <ion-buttons slot="end">
+                <ion-menu-button class="largeIcon"></ion-menu-button>
+            </ion-buttons>
+            <ion-title class="ion-text-center">{{translateText.title}}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-tab-bar slot="top">
+        <ion-tab-button tab="port-setting">
+            <ion-label>{{translateText.basicSettings}}</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="smoke-setting">
+            <ion-label>{{translateText.smokeMachine}}</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="show-delay" *ngIf="defaultMenuSettingService.showType">
+            <ion-label>{{translateText.openingShowDelay}}</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="video-delay" *ngIf="defaultMenuSettingService.videoState==1">
+            <ion-label>{{translateText.videoDelay}}</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="other-delay">
+            <ion-label>{{translateText.otherDelay}}</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button *ngIf="lightRecording" tab="light-storage-record">
+            <ion-label>{{translateText.TapeSet}}</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="record-list">
+            <ion-label>{{translateText.equipmentMonitoring}}</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>

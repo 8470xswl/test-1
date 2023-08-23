@@ -1,0 +1,32 @@
+<ion-content (click)="dismiss()">
+    <!-- <ion-img class="img_class" [src]="src1"></ion-img> -->
+    <!-- <ion-slides
+        #slide1
+        pager="true"
+        [options]="slidesOptions"
+        (ionSlideTouchEnd)="slideTouch()">
+        <ion-slide> </ion-slide>
+        <ion-slide>
+            <ion-img
+                class="img_class"
+                [src]="src2"
+            ></ion-img>
+        </ion-slide>
+        <ion-slide>
+            <ion-img
+                class="img_class"
+                [src]="src3"
+            ></ion-img>
+        </ion-slide> 
+    </ion-slides> 
+-->
+    <ion-row style="width: 100%; height: 100%">
+        <ion-col style="display: flex; align-items: center; justify-self: center">
+            <video
+                style="width: 100%; height: auto"
+                autoplay="true"
+                loop="true"
+                [src]="videoUrl"></video>
+        </ion-col>
+    </ion-row>
+</ion-content>

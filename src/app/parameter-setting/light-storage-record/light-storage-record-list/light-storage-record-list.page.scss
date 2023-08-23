@@ -1,0 +1,22 @@
+.box {
+
+    font-family: cc;
+    font-size: 6vh;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-select-box {
+    border-radius: 15px;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

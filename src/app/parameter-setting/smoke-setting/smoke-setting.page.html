@@ -1,0 +1,174 @@
+<ion-content>
+    <ion-radio-group [(ngModel)]="smokeStyle">
+        <ion-item>
+            <ion-radio value="smoking0" mode="md"></ion-radio>
+
+            <ion-label> {{translateText.smokeMachineOption}} </ion-label>
+            <ion-radio value="smoking1" mode="md"></ion-radio>
+
+            <ion-label> {{translateText.smokeSystemOption}} </ion-label>
+        </ion-item>
+    </ion-radio-group>
+    <ion-list *ngIf="smokeStyle=='smoking0'">
+        <ion-item>
+            <ion-label style="width: 20vw"> {{translateText.smokeMachineAdress}} </ion-label>
+            <ion-input
+                placeholder="{{translateText.smokeMachineAdressPlaceholder}}"
+                [(ngModel)]="smokeAddress"
+                type="number"
+                class="inputWidth"
+            ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.smokeMachinePort}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.smokeMachinePortPlaceholder}}"
+                [(ngModel)]="smokePort"
+                type="number"
+                class="inputWidth"
+            ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.DMX}}</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.denseFog}}</ion-label>
+            <ion-input placeholder="1" [(ngModel)]="bigChannel1" type="number" (ionInput)="inputBigSmoke($event)">
+            </ion-input>
+            <ion-input
+                placeholder="2"
+                [(ngModel)]="bigChannel2"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="3"
+                [(ngModel)]="bigChannel3"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="4"
+                [(ngModel)]="bigChannel4"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="5"
+                [(ngModel)]="bigChannel5"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <!-- <ion-input placeholder="6" [(ngModel)]="bigChannel6" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="7" [(ngModel)]="bigChannel7" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="8" [(ngModel)]="bigChannel8" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="9" [(ngModel)]="bigChannel9" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="10" [(ngModel)]="bigChannel10" type="number" (ionInput)="numberCheck($event)">
+        </ion-input> -->
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.mediumFog}}</ion-label>
+            <ion-input placeholder="1" [(ngModel)]="midChannel1" type="number" (ionInput)="inputMidSmoke($event)">
+            </ion-input>
+            <ion-input
+                placeholder="2"
+                [(ngModel)]="midChannel2"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="3"
+                [(ngModel)]="midChannel3"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="4"
+                [(ngModel)]="midChannel4"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <ion-input
+                placeholder="5"
+                [(ngModel)]="midChannel5"
+                type="number"
+                (ionInput)="numberCheck($event)"
+            ></ion-input>
+            <!-- <ion-input placeholder="6" [(ngModel)]="midChannel6" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="7" [(ngModel)]="midChannel7" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="8" [(ngModel)]="midChannel8" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="9" [(ngModel)]="midChannel9" type="number" (ionInput)="numberCheck($event)"></ion-input>
+        <ion-input placeholder="10" [(ngModel)]="midChannel10" type="number" (ionInput)="numberCheck($event)">
+        </ion-input> -->
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.mist}}</ion-label>
+            <ion-input placeholder="1" [(ngModel)]="smallChannel1" type="number" (ionInput)="inputSmallSmoke($event)">
+            </ion-input>
+            <ion-input placeholder="2" [(ngModel)]="smallChannel2" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="3" [(ngModel)]="smallChannel3" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="4" [(ngModel)]="smallChannel4" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="5" [(ngModel)]="smallChannel5" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <!-- <ion-input placeholder="6" [(ngModel)]="smallChannel6" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="7" [(ngModel)]="smallChannel7" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="8" [(ngModel)]="smallChannel8" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="9" [(ngModel)]="smallChannel9" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="10" [(ngModel)]="smallChannel10" type="number" (ionInput)="numberCheck($event)">
+        </ion-input> -->
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.shutdown}}</ion-label>
+            <ion-input placeholder="1" [(ngModel)]="closeChannel1" type="number" (ionInput)="inputCloseSmoke($event)">
+            </ion-input>
+            <ion-input placeholder="2" [(ngModel)]="closeChannel2" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="3" [(ngModel)]="closeChannel3" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="4" [(ngModel)]="closeChannel4" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <ion-input placeholder="5" [(ngModel)]="closeChannel5" type="number" (ionInput)="numberCheck($event)">
+            </ion-input>
+            <!-- <ion-input placeholder="6" [(ngModel)]="closeChannel6" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="7" [(ngModel)]="closeChannel7" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="8" [(ngModel)]="closeChannel8" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="9" [(ngModel)]="closeChannel9" type="number" (ionInput)="numberCheck($event)">
+        </ion-input>
+        <ion-input placeholder="10" [(ngModel)]="closeChannel10" type="number" (ionInput)="numberCheck($event)">
+        </ion-input> -->
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.smokeAppearsTime}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.smokeAppearsTime}}"
+                [(ngModel)]="openIngTime"
+                type="number"
+                class="inputWidth"
+            >
+            </ion-input> {{translateText.second}}
+        </ion-item>
+        <ion-item>
+            <ion-label>{{translateText.intervalTime}}</ion-label>
+            <ion-input
+                placeholder="{{translateText.intervalTime}}"
+                [(ngModel)]="intervalTime"
+                type="number"
+                class="inputWidth"
+            >
+            </ion-input> {{translateText.second}}
+        </ion-item>
+    </ion-list>
+    <div class="ion-text-center">
+        <ion-button (click)="setSmokeSetting()">{{translateText.confirmBtn}}</ion-button>
+    </div>
+</ion-content>

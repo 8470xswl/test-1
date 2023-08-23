@@ -1,0 +1,170 @@
+{
+    "appPages": {
+        "modeSelection": "模式选择",
+        "parameterSetting": "参数设置",
+        "contactUs": "联系我们",
+        "productCenter": "产品中心",
+        "languageSwitching": "切换语言",
+        "updateProgram": "程序更新"
+    },
+    "parameterVerify": {
+        "title": "参数设置",
+        "input": "输入密码:",
+        "inputPlaceholder": "请输入密码",
+        "confirmBtn": "确认",
+        "alert_header": "提示",
+        "alert_message": "密码输入错误,请重新输入",
+        "alert_confirmBtn": "确定"
+    },
+    "parameterSettings": {
+        "baseSettings": {
+            "address": "地址:",
+            "addressPlaceholder": "输入服务器地址",
+            "destinationPort": "目标端口:",
+            "monitorPort": "监听端口:",
+            "port": "端口:",
+            "portPlaceholder": "输入端口",
+            "meetingGuestsDefaultVolume": "会客默认音量:",
+            "meetingGuestsDefaultVolumePlaceholder": "输入会客默认音量",
+            "danceMusicDefaultVolume": "舞曲默认音量:",
+            "danceMusicDefaultVolumePlaceholder": "输入舞曲默认音量",
+            "christmasDefaultVolume": "圣诞默认音量:",
+            "christmasDefaultVolumePlaceholder": "输入圣诞默认音量",
+            "birthdayDefaultVolume": "生日默认音量:",
+            "birthdayDefaultVolumePlaceholder": "输入生日默认音量",
+            "OpeningShowDefaultVolume": "开场秀默认音量:",
+            "OpeningShowDefaultVolumePlaceholder": "输入开场秀默认音量",
+            "servingLiquorDefaultVolume": "上酒默认音量:",
+            "servingLiquorDefaultVolumePlaceholder": "输入上酒默认音量",
+            "GGDefaultVolume": "GG默认音量:",
+            "GGDefaultVolumePlaceholder": "输入GG默认音量",
+            "beautyDefaultVolume": "选秀默认音量:",
+            "beautyDefaultVolumePlaceholder": "输入选秀默认音量",
+            "proposeDefaultVolume": "求婚默认音量:",
+            "proposeDefaultVolumePlaceholder": "输入求婚默认音量",
+            "externalHdmiSignal": "外接HDMI信号",
+            "productVideo": "产品视频",
+            "karaokeParty": "K歌派对",
+            "bluetoothParty": "蓝牙派对",
+            "servingLiquor": "上酒",
+            "draft": "选秀",
+            "GGDance": "GGDance",
+            "propose": "求婚",
+            "openingShow": "开场秀",
+            "screenSaver": "屏保",
+            "CA1105": "CA1105",
+            "editCustomRegion": "编辑自定义区域",
+            "videoOverlay": "视频叠加",
+            "serviceLightStandbyColor": "服务灯待机颜色",
+            "switchOn": "开",
+            "switchOff": "关",
+            "confirmBtn": "确认"
+        },
+        "smokeSetting": {
+            "smokeMachineOption": "烟机",
+            "smokeMachineAdress": "烟机地址:",
+            "smokeMachineAdressPlaceholder": "输入烟机地址",
+            "smokeMachinePort": "烟机端口:",
+            "smokeMachinePortPlaceholder": "输入烟机端口",
+            "DMX": "DMX:",
+            "denseFog": "大雾:",
+            "mediumFog": "中雾:",
+            "mist": "小雾:",
+            "shutdown": "关机:",
+            "smokeAppearsTime": "出烟时间:",
+            "intervalTime": "间隔时间:",
+            "smokeSystemOption": "烟雾系统",
+            "confirmBtn": "设置",
+            "second": "秒"
+        },
+        "showDelay": {
+            "show1DelyTime": "开场秀1延迟时间:",
+            "show2DelyTime": "开场秀2延迟时间:",
+            "show3DelyTime": "开场秀3延迟时间:",
+            "show4DelyTime": "开场秀4延迟时间:",
+            "confirmBtn": "设置"
+        },
+        "videoDelay": {
+            "video1DelayTime": "视频1延迟时间:",
+            "video2DelayTime": "视频2延迟时间:",
+            "video3DelayTime": "视频3延迟时间:",
+            "video4DelayTime": "视频4延迟时间:",
+            "video5DelayTime": "视频5延迟时间:",
+            "video6DelayTime": "视频6延迟时间:",
+            "video7DelayTime": "视频7延迟时间:",
+            "video8DelayTime": "视频8延迟时间:",
+            "video9DelayTime": "视频9延迟时间:",
+            "video10DelayTime": "视频10延迟时间:",
+            "video11DelayTime": "视频11延迟时间:",
+            "video12DelayTime": "视频12延迟时间:",
+            "video13DelayTime": "视频13延迟时间:",
+            "video14DelayTime": "视频14延迟时间:",
+            "video15DelayTime": "视频15延迟时间:",
+            "confirmBtn": "确认"
+        },
+        "otherDelay": {
+            "GG1DelayTime": "GG1延迟时间:",
+            "GG2DelayTime": "GG2延迟时间:",
+            "GG3DelayTime": "GG3延迟时间:",
+            "GG4DelayTime": "GG4延迟时间:",
+            "GG5DelayTime": "GG5延迟时间:",
+            "GG6DelayTime": "GG6延迟时间:",
+            "servingLiquor1DelayTime": "上酒1延迟时间:",
+            "servingLiquor2DelayTime": "上酒2延迟时间:",
+            "servingLiquor3DelayTime": "上酒3延迟时间:",
+            "servingLiquor4DelayTime": "上酒4延迟时间:",
+            "servingLiquor5DelayTime": "上酒5延迟时间:",
+            "servingLiquor6DelayTime": "上酒6延迟时间:",
+            "confirmBtn": "确认"
+        },
+        "recordList": {
+            "equipmentMonitoring": "设备监控:",
+            "platform": "台",
+            "serialNumber": "序号",
+            "primaryDomain": "主域",
+            "outputPort": "输出口",
+            "channelMode": "通道模式",
+            "DMXChannel": "DMX通道",
+            "DMXAddress": "DMX地址",
+            "recordTime": "记录时间",
+            "operationInformation": "运行信息",
+            "details": "详情",
+            "confirmBtn": "确认",
+            "cancelBtn": "取消"
+        },
+        "tabs": {
+            "title": "参数设置",
+            "basicSettings": "基本设置",
+            "smokeMachine": "烟机",
+            "openingShowDelay": "开场秀延迟",
+            "videoDelay": "视频延迟",
+            "otherDelay": "其他延迟",
+            "TapeSet": "录制设置",
+            "equipmentMonitoring": "设备监控"
+        },
+        "toast": {
+            "message": "已设置各项参数"
+        }
+    },
+    "contact": {
+        "label1": "舞台灯光行业领导品牌",
+        "label2": "佛山市毅丰电器实业有限公司",
+        "label3": "总机:+86-757-88325001",
+        "label4": "E-mail:sales@acme.com.cn",
+        "label5": "地址:中国广东省佛山市高明区荷城街道高明大道东898号",
+        "label6": "程序版本:V1.1.0"
+    },
+    "modelSelect": {
+        "alert": {
+            "header": "提示",
+            "message": "指挥家设备未连接,请等待指挥家设备连接",
+            "confirmBtn": "确认"
+        },
+        "switchon": "开",
+        "switchoff": "关"
+    },
+    "productCenterPage": {
+        "productCenter": "产品中心",
+        "playing": "播放中"
+    }
+}

@@ -1,0 +1,353 @@
+<ion-content>
+  <ion-grid class="bodyBackground" style="padding-top:0px">
+    <ion-row>
+      <ion-col >
+        <img src="{{acmeLogo}}" id="acmeLogo" >
+      </ion-col>
+      <ion-col >
+        <div class="ion-text-center">
+          <img src="{{state}}" style="width:auto;">
+        </div>
+      </ion-col>
+      <ion-col >
+        <div>
+          <h5>{{translate.productCenter}}</h5>
+        </div>
+      </ion-col>
+      <ion-col >
+        <div class="ion-text-center ion-padding-vertical" style="width: 100%;">
+          <img *ngIf="playing" src="assets/img/product-center/pause.png" style="width: 45%;" (click)="clickPlayerButton($event)" id="playerButton">
+          <img *ngIf="!playing" src="assets/img/product-center/play.png"  style="width: 45%" (click)="clickPlayerButton($event)" id="playerButton">
+
+        </div>
+
+      </ion-col>
+      <ion-col size="1.5">
+        <ion-menu-button style="font-size:xxx-large"></ion-menu-button>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+
+    <ion-row style="height:16vw">
+      <ion-col size="2.4" (click)="sendProduct('musictype_35')">
+        
+        <div class="greyBackGround divSize"  style="background-image:url('{{baseUrl}}35.jpg')">
+          <span>
+            01
+            <ion-icon name="create-outline"   style="float:right" (click)="editProduct('musictype_35',$event)"></ion-icon>
+
+          </span>
+            <!-- <img src="{{address}}:{{port}}/temp/product/35.jpg" style="width:100%" onerror="this.src='assets/img/product-center/blank.png'"> -->
+          
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_35" placeholder="输入产品名" id="musictype_35" readonly> </ion-input>
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_36')"  style="background-image:url('{{baseUrl}}36.jpg')">
+          <span>
+            02
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_36',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/36.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_36" placeholder="输入产品名" id="musictype_36" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_36Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_36')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_36')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_37')" style="background-image:url('{{baseUrl}}37.jpg')">
+          <span>
+            03
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_37',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/37.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_37" placeholder="输入产品名" id="musictype_37" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_37Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_37')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_37')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_38')" style="background-image:url('{{baseUrl}}38.jpg')">
+          <span>
+            04
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_38',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/38.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_38" placeholder="输入产品名" id="musictype_38" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_38Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_38')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_38')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_39')" style="background-image:url('{{baseUrl}}39.jpg')">
+          <span>
+            05
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_39',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/39.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_39" placeholder="输入产品名" id="musictype_39" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_39Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_39')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_39')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="height:16vw;">
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_40')" style="background-image:url('{{baseUrl}}40.jpg')">
+          <span>
+            06
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_40',$event)"></ion-icon>
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/40.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_40" placeholder="输入产品名" id="musictype_40" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_40Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_40')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_40')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_41')" style="background-image:url('{{baseUrl}}41.jpg')">
+          <span>
+            07
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_41',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/41.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_41" placeholder="输入产品名" id="musictype_41" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_41Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_41')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_41')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_42')" style="background-image:url('{{baseUrl}}42.jpg')">
+          <span>
+            08
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_42',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/42.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_42" placeholder="输入产品名" id="musictype_42" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_42Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_42')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_42')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_43')" style="background-image:url('{{baseUrl}}43.jpg')">
+          <span>
+            09
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_43',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/43.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_43" placeholder="输入产品名" id="musictype_43" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_43Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_43')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_43')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_44')" style="background-image:url('{{baseUrl}}44.jpg')">
+          <span>
+            10
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_44',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/44.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_44" placeholder="输入产品名" id="musictype_44" readonly> </ion-input>
+
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_44Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_44')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_44')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine">
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="height:16vw;">
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_45')" style="background-image:url('{{baseUrl}}45.jpg')">
+          <span>
+            11
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_45',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/45.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_45" placeholder="输入产品名" id="musictype_45" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_45Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_45')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_45')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine" >
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_46')"  style="background-image:url('{{baseUrl}}46.jpg')">
+          <span>
+            12
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_46',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/46.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_46" placeholder="输入产品名" id="musictype_46" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_46Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_46')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_46')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine" >
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_47')" style="background-image:url('{{baseUrl}}47.jpg')">
+          <span>
+            13
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_47',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/47.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_47" placeholder="输入产品名" id="musictype_47" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_47Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_47')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_47')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine" >
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_48')" style="background-image:url('{{baseUrl}}48.jpg')">
+          <span>
+            14
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_48',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/48.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center" [(ngModel)]="musictype_48" placeholder="输入产品名" id="musictype_48" readonly> </ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_48Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_48')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_48')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine" >
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+      <ion-col size="2.4">
+        <div class="greyBackGround divSize" (click)="sendProduct('musictype_49')" style="background-image:url('{{baseUrl}}49.jpg')">
+          <span>
+            15
+            <ion-icon name="create-outline"  style="float:right"  (click)="editProduct('musictype_49',$event)"></ion-icon>
+
+          </span>
+          <!-- <img src="{{address}}:{{port}}/temp/product/35.jpg" onerror="this.src='assets/img/product-center/blank.png'"> -->
+
+          <ion-input type="text" class="ion-text-center"  [(ngModel)]="musictype_49" placeholder="输入产品名" id="musictype_49" readonly  ></ion-input>
+          <!-- <span class="ion-text-center hiddenEdit" id="musictype_49Edit" >
+            <ion-icon name="checkmark-outline" (click)="confirmName('musictype_49')"></ion-icon>
+            <ion-icon name="close-outline" (click)="cancelName('musictype_49')"></ion-icon>
+  
+          </span> -->
+          <span class="playInformation playInformationHidden ion-text-center" style="color:aquamarine" >
+            {{translate.playing}}
+          </span>
+
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

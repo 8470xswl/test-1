@@ -1,0 +1,372 @@
+.listRow {
+    margin-top: -1vh;
+
+}
+
+.listCol {
+
+    // margin-left: 0.5rem;
+    //  border-right: 2px solid #797979;
+
+}
+
+.bodyBackground {
+    // background: url("../../assets/img/mode-select/BG.png");
+}
+
+.conversationBackground {
+    background: url("../../assets/img/mode-select/optionBackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+.widerConversationBackground {
+    background: url("../../assets/img/mode-select/optionBackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.bluetoothPartyBackground {
+    background: url("../../assets/img/mode-select/bluetoothPartyBackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.toolbarBackground {
+    --background: #000000
+}
+
+.fogBackground {
+    background-color: #78C5B8;
+}
+
+.fogMachineCss>ion-col {
+    background-color: #78C5B8;
+
+}
+
+.conversationList {
+    height: 100%;
+}
+
+.musicDetailClass {
+    position: absolute;
+}
+
+.musicVolume {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 5% -10%;
+}
+
+ion-col {
+    height: 100%;
+    //font-size: 0px;
+
+}
+
+.noPaddingCol {
+    padding: 0px;
+}
+
+.largeIcon {
+    font-size: 9.5vh;
+    padding-bottom: 2vh;
+}
+
+.mediumIcon {
+    font-size: 6vh;
+    padding-bottom: 2vh;
+}
+
+
+.fullscreen {
+    --width: 100%;
+    --height: 100%
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.halfHeightImage {
+    width: 100%;
+    height: 50%;
+}
+
+.divModeHeight {
+    height: 25vh;
+}
+
+.divModeHeight-Portrait {
+    height: 24vh;
+}
+
+.halfHeightRow {
+    height: 50%
+}
+
+.fullRow {
+    height: 100%
+}
+
+.autoHeightCol {
+    height: auto;
+}
+
+.fogMachineCss ion-col {
+    height: auto;
+
+}
+
+.modalRow ion-col {
+    font-size: medium;
+}
+
+.paddingBottomImage {
+    padding-bottom: 2px;
+}
+
+.paddingTopImage {
+    padding-top: 2px;
+}
+
+.mediaFontSize {
+    font-size: medium;
+
+}
+
+ion-item {
+    --background: transparent !important
+}
+
+.clicked {
+    color: rgb(51, 51, 51);
+}
+
+.input-style {
+
+    font-weight: 300;
+    font-size: 2.5vw;
+    font-family: DingTalk;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    // background-color: #78C5B8;
+
+}
+
+ion-input {
+    --padding-end: 0px;
+    --padding-start: 0px
+}
+
+.label-style {
+    font-weight: 300;
+    display: flex;
+    font-size: 2.5vw;
+    font-family: DingTalk;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.option-describe-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50% 50% 50% 50%;
+}
+
+
+span.option-describe-KTV {
+    font-size: 2vw;
+    color: #d6681a;
+}
+
+span.option-describe-show {
+    font-size: 2vw;
+    color: #735fb6;
+}
+
+span.option-describe-lq {
+    font-size: 2vw;
+    color: #1e75f8;
+}
+
+span.option-describe-DJ {
+    font-size: 2vw;
+    color: #A9C206;
+}
+
+span.option-describe-GG {
+    font-size: 2vw;
+    color: #C2BB40;
+}
+
+span.option-describe-beauty {
+    font-size: 2vw;
+    color: #40a110;
+}
+
+span.option-describe-propose {
+    font-size: 2vw;
+    color: #ff33d6;
+}
+
+span.option-describe-meeting {
+    font-size: 2vw;
+    color: #ff48a0;
+}
+
+.options-box {
+    position: relative;
+    border: 1px;
+    border-radius: 10px;
+    width: 100%;
+    height: 47.5%;
+
+}
+
+.singing-options-box {
+    background-color: #FEB079;
+    height: 100%;
+    @extend .options-box
+}
+
+.dj-options-box {
+    background-color: #C2E105;
+    @extend .options-box
+}
+
+
+
+.show-options-box {
+    background-color: #A79CCB;
+    @extend .options-box
+}
+
+.serveWine-options-box {
+    background-color: #77ADFD;
+    @extend .options-box
+}
+
+.GG-options-box {
+    background-color: #E6DE4C;
+    @extend .options-box
+}
+
+.beauty-options-box {
+    background-color: #a4e683;
+    @extend .options-box
+}
+
+.propose-options-box {
+    background-color: #fd77e2;
+    @extend .options-box
+}
+
+.meeting-options-box {
+    background-color: #FE87C1;
+    @extend .options-box
+}
+
+.blueTooth_box {
+    font-family: DingTalk;
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 104%;
+    background-color: #C2E105;
+    border-radius: 10px;
+}
+
+.mode-select-box {
+    border-radius: 15px;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row_33 {
+    height: 33%;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.image_8_6 {
+    height: 80%;
+    width: 80%
+}
+
+.image_4_4 {
+    height: 40%;
+    width: 40%
+}
+
+.row_fullWidth {
+    width: 100%;
+}
+
+.row_Top_Bottom_padding_5 {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.row_Top_Bottom_padding_none {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+.margin_left_right_5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.margin_top_bottom_5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.paddingBottom {
+    margin-bottom: 1vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.box {
+    font-family: cc;
+    font-size: 2vw;
+    background-color: rgb(6, 112, 250);
+}
+
+

@@ -1,0 +1,13 @@
+keytool -genkey -v -keystore acme-ktv-app.jks -keyalg RSA -keysize 2048 -validity 3650 -alias acme-ktv-light-alias -storetype PKCS12
+
+口令:acmeKtv
+姓名姓氏:acme
+组织单位:acme
+组织名称:acme
+城市或区域:佛山市
+所在的省:广东省
+地区代码:CHN
+
+
+
+jarsigner -verbose -keystore acme-ktv-app.jks  -signedjar acme-ktv.apk app-release-unsigned.apk acme-ktv-light-alias

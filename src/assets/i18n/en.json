@@ -1,0 +1,170 @@
+{
+    "appPages": {
+        "modeSelection": "ModeSelection",
+        "parameterSetting": "ParameterSettings",
+        "contactUs": "ContactUs",
+        "productCenter": "ProductCenter",
+        "languageSwitching": "Change Language",
+        "updateProgram": "UpdateProgram"
+    },
+    "parameterVerify": {
+        "title": "ParameterSettings",
+        "input": "Password:",
+        "inputPlaceholder": "Please enter password",
+        "confirmBtn": "CONFIRM",
+        "alert_header": "Tips",
+        "alert_message": "Password Error Please Re Enter",
+        "alert_confirmBtn": "CONFIRM"
+    },
+    "parameterSettings": {
+        "baseSettings": {
+            "address": "Address:",
+            "addressPlaceholder": "Plase Enter Server Address",
+            "port": "Port:",
+            "destinationPort": "DestinationPort:",
+            "monitorPort": "ListeningPort:",
+            "portPlaceholder": "Input Port",
+            "meetingGuestsDefaultVolume": "MeetingGuestsDefaultVolume:",
+            "meetingGuestsDefaultVolumePlaceholder": "Enter The Default Volume For Meeting Guests",
+            "danceMusicDefaultVolume": "DanceMusicDefaultVolume:",
+            "danceMusicDefaultVolumePlaceholder": "Enter Default Volume For Dance Music",
+            "christmasDefaultVolume": "ChristmasDefaultVolume:",
+            "christmasDefaultVolumePlaceholder": "Enter Default Volume For Christmas",
+            "birthdayDefaultVolume": "BirthdayDefaultVolume:",
+            "birthdayDefaultVolumePlaceholder": "Enter Default Volume For Birthday",
+            "OpeningShowDefaultVolume": "OpeningShowDefaultVolume:",
+            "OpeningShowDefaultVolumePlaceholder": "Enter The Default Volume For The Opening Show",
+            "servingLiquorDefaultVolume": "ServingLiquorDefaultVolume:",
+            "servingLiquorDefaultVolumePlaceholder": "Enter The Default Volume For Serving Alcohol",
+            "GGDefaultVolume": "GGDefaultVolume:",
+            "GGDefaultVolumePlaceholder": "Enter Default Volume For GGDance",
+            "beautyDefaultVolume": "BeautyDefaultVolume:",
+            "beautyDefaultVolumePlaceholder": "Enter The Default Volume For The Beauty",
+            "proposeDefaultVolume": "ProposalDefaultVolume:",
+            "proposeDefaultVolumePlaceholder": "Enter The Default Volume For Marriage Proposal",
+            "externalHdmiSignal": "ExternalHdmiSignal",
+            "productVideo": "ProductVideo",
+            "karaokeParty": "KaraokeParty",
+            "bluetoothParty": "BluetoothParty",
+            "servingLiquor": "ServingLiquor",
+            "draft": "Draft",
+            "GGDance": "GGDance",
+            "propose": "Propose",
+            "openingShow": "OpeningShow",
+            "screenSaver": "ScreenSaver",
+            "CA1105": "CA1105",
+            "editCustomRegion": "EditCustomRegion",
+            "videoOverlay": "VideoOverlay",
+            "serviceLightStandbyColor": "ServiceLightStandbyColor",
+            "switchOn": "ON",
+            "switchOff": "OFF",
+            "confirmBtn": "CONFIRM"
+        },
+        "smokeSetting": {
+            "smokeMachineOption": "SmokeMachine",
+            "smokeMachineAdress": "SmokeMachineAdress:",
+            "smokeMachineAdressPlaceholder": "Enter The SmokeMachine Address:",
+            "smokeMachinePort": "SmokeMachinePort:",
+            "smokeMachinePortPlaceholder": "Enter SmokeMachine Port",
+            "DMX": "DMX:",
+            "denseFog": "DenseFog:",
+            "mediumFog": "MediumFog:",
+            "mist": "Mist:",
+            "shutdown": "Shutdown:",
+            "smokeAppearsTime": "SmokeAppearsTime:",
+            "intervalTime": "IntervalTime:",
+            "smokeSystemOption": "SmokeSystem",
+            "confirmBtn": "CONFIRM",
+            "second": "Second"
+        },
+        "showDelay": {
+            "show1DelyTime": "OpenShow1 DelyTime:",
+            "show2DelyTime": "OpenShow2 DelyTime:",
+            "show3DelyTime": "OpenShow3 DelyTime:",
+            "show4DelyTime": "OpenShow4 DelyTime:",
+            "confirmBtn": "CONFIRM"
+        },
+        "videoDelay": {
+            "video1DelayTime": "Video1 DelayTime:",
+            "video2DelayTime": "Video2 DelayTime:",
+            "video3DelayTime": "Video3 DelayTime:",
+            "video4DelayTime": "Video4 DelayTime:",
+            "video5DelayTime": "Video5 DelayTime:",
+            "video6DelayTime": "Video6 DelayTime:",
+            "video7DelayTime": "Video7 DelayTime:",
+            "video8DelayTime": "Video8 DelayTime:",
+            "video9DelayTime": "Video9 DelayTime:",
+            "video10DelayTime": "Video10 DelayTime:",
+            "video11DelayTime": "Video11 DelayTime:",
+            "video12DelayTime": "Video12 DelayTime:",
+            "video13DelayTime": "Video13 DelayTime:",
+            "video14DelayTime": "Video14 DelayTime:",
+            "video15DelayTime": "Video15 DelayTime:",
+            "confirmBtn": "CONFIRM"
+        },
+        "otherDelay": {
+            "GG1DelayTime": "GG1 DelayTime:",
+            "GG2DelayTime": "GG2 DelayTime:",
+            "GG3DelayTime": "GG3 DelayTime:",
+            "GG4DelayTime": "GG4 DelayTime:",
+            "GG5DelayTime": "GG5 DelayTime:",
+            "GG6DelayTime": "GG6 DelayTime:",
+            "servingLiquor1DelayTime": "ServingLiquor1 DelayTime:",
+            "servingLiquor2DelayTime": "ServingLiquor2 DelayTime:",
+            "servingLiquor3DelayTime": "ServingLiquor3 DelayTime:",
+            "servingLiquor4DelayTime": "ServingLiquor4 DelayTime:",
+            "servingLiquor5DelayTime": "ServingLiquor5 DelayTime:",
+            "servingLiquor6DelayTime": "ServingLiquor6 DelayTime:",
+            "confirmBtn": "CONFIRM"
+        },
+        "recordList": {
+            "equipmentMonitoring": "Equipment Monitoring:",
+            "platform": "Platform",
+            "serialNumber": "SerialNumber",
+            "primaryDomain": "PrimaryDomain",
+            "outputPort": "OutputPort",
+            "channelMode": "ChannelMode",
+            "DMXChannel": "DMXChannel",
+            "DMXAddress": "DMXAddress",
+            "recordTime": "RecordTime",
+            "operationInformation": "Run Time Information",
+            "details": "Details",
+            "confirmBtn": "CONFIRM",
+            "cancelBtn": "CANCEL"
+        },
+        "tabs": {
+            "title": "ParameterSettings",
+            "basicSettings": "BasicSettings",
+            "smokeMachine": "SmokeMachine",
+            "openingShowDelay": "Opening Show Delay",
+            "videoDelay": "Video Delay",
+            "otherDelay": "Other Delay",
+            "TapeSet": "Tape Set",
+            "equipmentMonitoring": "Equipment Monitoring"
+        },
+        "toast": {
+            "message": "All Parameters Have Been Set"
+        }
+    },
+    "contact": {
+        "label1": "HONG KONG ACME ELECTRIC LIMITED",
+        "label2": "Foshan YiFeng Electric Industrial Co.,Ltd.",
+        "label3": "Tel: +86-757-88325001",
+        "label4": "E-mail:sales@acme.com.cn",
+        "label5": "Address:No.898,Gaoming Avenue East,Hecheng Blvd, Gaoming District,Foshan City, Guangdong Province China.",
+        "label6": "ProgramVersion: V1.1.0"
+    },
+    "modelSelect": {
+        "alert": {
+            "header": "Tips",
+            "message": "The Conductor Device Is Not Connected Please Wait For The Conductor Device To Connect",
+            "confirmBtn": "CONFIRM"
+        },
+        "switchon": "ON",
+        "switchoff": "OFF"
+    },
+    "productCenterPage": {
+        "productCenter": "Product Center",
+        "playing": "playing"
+    }
+}

@@ -1,0 +1,106 @@
+ion-select {
+    --placeholder-color: #ffffff;
+    --placeholder-opacity: 1;
+    width: 100%;
+    justify-content: center;
+
+    padding-left: 45px;
+
+}
+
+ion-select::part(text) {
+    color: #545ca7;
+}
+
+ion-select::part(placeholder),
+ion-select::part(text) {
+    flex: 0 0 auto;
+}
+
+ion-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.ion-radio1 {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+}
+
+.ion-radio2 {
+    width: 20px;
+    height: 20px;
+    background-color: #0000ff;
+    border-radius: 4px;
+    border: 1px solid #0000ff;
+}
+
+.ion-radio3 {
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00;
+    border-radius: 4px;
+    border: 1px solid #00ff00;
+}
+
+.ion-radio4 {
+    width: 20px;
+    height: 20px;
+    background-color: #ffff00;
+    border-radius: 4px;
+    border: 1px solid #ffff00;
+}
+
+.ion-radio5 {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 4px;
+    border: 1px solid #ff0000;
+}
+
+
+ion-radio::part(container) {
+    border-radius: 0px;
+    border: 0px solid;
+}
+
+ion-radio::part(mark) {
+    background: none;
+    transition: none;
+    transform: none;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+
+
+ion-radio.radio-checked::part(mark) {
+    width: 10px;
+    height: 20px;
+
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: #777171;
+
+    transform: rotate(40deg);
+}
+
+.item-input {
+    .sc-ion-label-md-h {
+        max-width: 500px;
+    }
+
+    .sc-ion-label-ios-h {
+        max-width: 500px;
+    }
+}
+
+.item_underline {
+    --border-color: rgb(60 , 60, 60);
+    --border-style: dashed
+}
